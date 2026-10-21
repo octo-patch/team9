@@ -13,7 +13,8 @@
     }
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "node --test --test-concurrency=1 test/*.test.cjs"
   },
   "dependencies": {
     "@team9/database": "workspace:*",

@@ -63,8 +63,9 @@ export type OpenRouterModel =
   | (typeof OPENROUTER_MODELS)[number]
   | (string & {});
 
-// MiniMax Models
-export const MINIMAX_MODELS = ['MiniMax-M3', 'MiniMax-M2.7'] as const;
+// MiniMax Models. Keep the ordinary catalog on the current text defaults;
+// arbitrary IDs remain valid for saved, custom, and legacy configurations.
+export const MINIMAX_MODELS = ['MiniMax-M3.1-Flash', 'MiniMax-M3'] as const;
 export type MinimaxModel = (typeof MINIMAX_MODELS)[number] | (string & {});
 
 // Model arrays by provider for runtime validation
